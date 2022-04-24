@@ -117,15 +117,15 @@ Use these short codes to get around''')
         '''
 
         print('''   Short codes:
-        cu - create a Password Locker account \n
-        du - display names of current Password Locker users \n
+        ca - create a Password Locker account \n
+        dn - display names of current Password Locker users \n
         lg - log into your Password Locker account \n
         ex - exit the Password Locker account''')
 
         # Get short codes from the user
         short_code = input().lower()
 
-        if short_code == 'cu':
+        if short_code == 'ca':
             '''
             Creating a Password Locker account
             '''
@@ -147,7 +147,7 @@ Use these short codes to get around''')
             print(f"{user_name} welcome to Password Locker")
             print("\n")
 
-        elif short_code == 'du':
+        elif short_code == 'dn':
             '''
             Display the names of the current users 
             '''
@@ -194,17 +194,17 @@ Use these short codes to get around''')
                     Loop to run functions after logging in
                     '''
                     print('''  Short codes:
-        cc - add a credential \n
+        ac - add a credential \n
         dc - display credentials \n
-        cg - create a credential with a generate password \n
+        cc - create a credential with a generate password \n
         ex - exit Credentials''')
 
                     # Get short code from the user
                     short_code = input().lower()
 
-                    if short_code == 'cc':
+                    if short_code == 'ac':
                         '''
-                        Creating a Credential
+                        Adding a Credential
                         '''
 
                         print("\n")
@@ -244,7 +244,7 @@ Use these short codes to get around''')
                             print("You have no credentials")
                             print("\n")
 
-                    elif short_code == 'cg':
+                    elif short_code == 'cc':
                         '''
                         Creating a credential with a generated password
                         '''
