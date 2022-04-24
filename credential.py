@@ -83,4 +83,8 @@ class Credential:
             
         '''
         
-       
+        for credential in cls.credential_list:
+            if credential.credential_name == name:
+                return True
+            
+        return False
