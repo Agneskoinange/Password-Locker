@@ -2,9 +2,7 @@
 import uniittest to create uniittests for User Module
 import User Module to be tested
 '''
-import unittest
-from user import User
-from credential import Credential
+
 
 
 class TestUser(unittest.TestCase):
