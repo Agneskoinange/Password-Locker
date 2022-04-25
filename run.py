@@ -109,7 +109,7 @@ def main():
     '''
 
     print('''Welcome to Password Locker \n
-Use these short codes to get around''')
+     Use these short codes to get around''')
 
     while True:
         '''
@@ -144,7 +144,7 @@ Use these short codes to get around''')
             save_users( create_user( user_name, user_password) )
 
             print("\n")
-            print(f"{user_name} welcome to Password Locker")
+            print(f"{user_name} welcome to your Password Locker Account")
             print("\n")
 
         elif short_code == 'dn':
@@ -162,7 +162,7 @@ Use these short codes to get around''')
                     print("-"*10)
             else:
                 print("\n")
-                print("Password Locker has no current user.\n    Be the first user :)")
+                print("Password Locker has no current user.\n    Be the first user to login :)")
                 print("\n")
 
         elif short_code == 'lg':
@@ -194,10 +194,10 @@ Use these short codes to get around''')
                     Loop to run functions after logging in
                     '''
                     print('''  Short codes:
-        ac - add a credential \n
-        dc - display credentials \n
-        cc - create a credential with a generate password \n
-        ex - exit Credentials''')
+                        ac - add a credential \n
+                        dc - display credentials \n
+                        cc - create a credential with a generate password \n
+                        ex - exit Credentials''')
 
                     # Get short code from the user
                     short_code = input().lower()
@@ -270,7 +270,7 @@ Use these short codes to get around''')
                     else:
                         print("\n")
                         print(f'''{short_code} does not compute.
-    Please use the short codes''')
+                        Please use the short codes''')
                         print("\n")
 
         elif short_code == 'ex':
@@ -278,14 +278,14 @@ Use these short codes to get around''')
             Exit Password Locker
             '''
             print("\n")
-            print("Bye .....")
+            print("Thank you for visiting us")
 
             break
 
         else:
             print("\n")
             print(f'''Come again, what's {short_code}?
-    Please use the short codes''')
+            Please use the short codes below''')
             print("\n")
 
 if __name__ == '__main__':
