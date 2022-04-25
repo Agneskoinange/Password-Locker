@@ -77,6 +77,12 @@ def save_credentials(credential):
 
     credential.save_credential()
 
+def del_user(user):
+    '''
+    Function to delete a user
+    '''
+    user.delete_user()
+
 def check_existing_credentials(name):
     '''
     Function that checks if a user credential name already exists
@@ -120,6 +126,7 @@ def main():
         ca - create a Password Locker account \n
         dn - display names of current Password Locker users \n
         lg - log into your Password Locker account \n
+        dl - delete your credentials account \n
         ex - exit the Password Locker account''')
 
         # Get short codes from the user

@@ -38,6 +38,14 @@ class Credential:
         '''
         Credential.credential_list.append(self)
 
+    # def delete_credential(self):
+
+    #     '''
+    #     delete_contact method deletes a saved credentials from the credentials_list
+    #     '''
+
+    #     Credential.credential_list.remove(self)
+
     @classmethod
     def generate_password(cls):
         '''

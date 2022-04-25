@@ -78,6 +78,17 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual( found_credential, False )
 
+    def test_delete_user(self):
+            '''
+            test_delete_user to test if we can remove a contact from our credentials list
+            '''
+            self.new_user.save_user()
+            test_user = User("user","password",) # new user
+            test_user.save_user()
+
+            self.new_user.delete_user()# Deleting a user object
+            self.assertEqual(len(User.user_list),1)
+
     def test_log_in(self):
         '''
         Test case to test if a user can log into their credentials
