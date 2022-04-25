@@ -280,6 +280,20 @@ def main():
                         Please use the short codes''')
                         print("\n")
 
+        elif short_code == "dl":
+            print("Enter the account name of the Credential you want to delete")
+            credential_name = input().lower()
+            
+            if del_user(credential):
+                del_user = del_user(credential_name)
+                print("_"*50)
+                del_user.delete_user()
+                print('\n')
+                print(f"Your stored credential for : {del_user.credential} successfully deleted!!!")
+                print('\n')
+            else:
+                print("The Credential you want to delete does not exist in your store yet")
+
         elif short_code == 'ex':
             '''
             Exit Password Locker
