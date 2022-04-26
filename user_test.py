@@ -80,7 +80,7 @@ class TestUser(unittest.TestCase):
 
     def test_delete_user(self):
             '''
-            test_delete_user to test if we can remove a contact from our credentials list
+            test_delete_user to test if we can remove a user from our credentials list
             '''
             self.new_user.save_user()
             test_user = User("user","password",) # new user
